@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Notes</h1>
+            <div class="controls">
+                <input type="text" id="search" placeholder="Search notes...">
+                <button id="dark-mode-toggle">🌙</button>
+            </div>
+        </header>
+
+        <div class="note-form">
+            <input type="text" id="note-title" placeholder="Title">
+            <textarea id="note-content" placeholder="Content"></textarea>
+            <button id="save-note">Save Note</button>
+            <button id="cancel-edit" style="display:none">Cancel</button>
+            <input type="hidden" id="edit-id">
+        </div>
+
+        <div class="notes-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Created At</th>
+                        <th>Updated At</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="notes-container">
+                    <!-- Notes will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
