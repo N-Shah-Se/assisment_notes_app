@@ -40,28 +40,7 @@ Frontend
 Project Structure
 text
 
-notes-app/
-├── app.py                 # Main application entry point
-├── config.py              # Application configuration    
-├── routes/
-│   ├── notes_management/
-│   │   ├── __init__.py
-│   │   ├── notes.py       # Note-related routes
-│   │   ├── process_notes.py # Note business logic
-│   │   └── constants.py   # Constants and messages
-│   │
-├───├── dec_fun/
-│   │   ├── secret_info.py     # Secret keys and configuration
-│   │   └── db_management.py   # Database setup and utilities
-│   |   └── notes_models.py    # Note database model
-│   └── __init__.py
-├── static/
-│   ├── style.css          # Main stylesheet
-│   └── script.js          # Main JavaScript file
-├── templates/
-│   └── index.html         # Main HTML template
-├── requirements.txt       # Python dependencies
-└── README.md              # This file
+<pre> ``` notes-app/ ├── app.py # Main application entry point ├── config.py # Application configuration ├── routes/ │ └── notes_management/ │ ├── __init__.py │ ├── notes.py # Note-related routes │ ├── process_notes.py # Note business logic │ └── constants.py # Constants and messages ├── dec_fun/ │ ├── secret_info.py # Secret keys and configuration │ ├── db_management.py # Database setup and utilities │ └── notes_models.py # Note database model ├── static/ │ ├── style.css # Main stylesheet │ └── script.js # Main JavaScript file ├── templates/ │ └── index.html # Main HTML template ├── requirements.txt # Python dependencies └── README.md # This file ``` </pre>
 
 Getting Started
 Prerequisites
